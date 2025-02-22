@@ -1,0 +1,73 @@
+.sendMsg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-top: 1px solid #ccc;
+  }
+  .msgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  .msg {
+    display: flex;
+    align-items: center;
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .msg img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    margin-right: 10px; /* テキストとの間隔を調整 */
+    margin-left: 10px;
+  }
+  .msg p{
+    font-size: 20px;
+  }
+
+  .send {
+    align-self: flex-end;
+    margin-right: 50px;
+    flex-direction: row-reverse;
+    background-color: #dcf8c6;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 80%;
+  }
+  
+  .receive {
+    align-self: flex-start;
+    margin-left: 50px;
+    flex-direction: row;
+    background-color: #cdeff1;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 80%;
+  }
+  .header {
+    background-color: #5f9ea0; /* 少し落ち着いた青緑 */
+    height: 150px; /* 少しコンパクトに */
+    display: flex;
+    align-items: center; /* 縦方向の中央揃え */
+    justify-content: space-between; /* 左右に要素を配置 */
+    padding: 0 20px; /* 左右に余白を持たせる */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1); /* 下に軽い影をつける */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1); /* 境界線を薄く */
+    margin-bottom: 50px;
+  }
+  
+  .userName{
+    margin-left: 10px;
+    font-size: 30px;
+    font-family:monospace ;
+  }
+  body{
+    background-color: #d6f5e0;
+  }
