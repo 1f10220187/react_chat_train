@@ -30,9 +30,10 @@ REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
 REACT_APP_FIREBASE_APP_ID=your_app_id
 ```
-## Firebase のデータ構造
+## Firestore のデータ構造
 
-このアプリでは Firestore を使用し、以下のようなデータ構造になっています。
+このアプリでは Firestore を使用し、以下のようなデータ構造になっています。<br>
+(コードを動かせばFireStoreは自動で作られるため設定は必要ないと思います。)
 
 ```json
 {
