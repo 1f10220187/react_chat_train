@@ -24,17 +24,15 @@ Reactに触れてみたいと思い作ってみました。<br>
 ```json
 "rooms": [
   {
-    "id": "roomId1",
-    "name": "ルームA",
-    "owner": "userId1",
-    "members": ["userId1", "userId2", "userId3"],
+    "name": string,
+    "owner": string,
+    "members": list,
     "createdAt": "timestamp",
     "messages": [
     {
-      "id": "messageId1",
-      "roomId": "roomId1",
-      "senderId": "userId1",
-      "text": "こんにちは！",
+      "uid": string,
+      "text": string,
+      "photoURL": string,
       "createdAt": "timestamp"
     }
 ]
@@ -42,9 +40,9 @@ Reactに触れてみたいと思い作ってみました。<br>
 ],
 "users": [
   {
-    "id": "userId1",
-    "displayName": "ユーザーA",
-    "email": "userA@example.com"
+    "id": string,
+    "displayName": string,
+    "email": string,
   }
 ]
 ```
