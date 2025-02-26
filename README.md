@@ -1,21 +1,11 @@
-# Getting Started with Create React App
+# Firebase Chat App
 
 ## 概要
 このプロジェクトは、Firebase を使って簡単なチャットルーム機能を実装した React アプリです。
 Reactに触れてみたくて作りました。
 ユーザーは Firebase Authentication で認証し、参加しているルームを一覧表示したり、新しいルームを作成・削除できます。
 以下の動画を参考にルーム機能をつけてみたものです。(UIなども異なります。)
-https://www.youtube.com/watch?v=Js9BsBsczE8
-
-# Firebase Chat App
-
-## 概要
-
-このプロジェクトは、Firebase を使って簡単なチャットルーム機能を実装した React アプリです。ユーザーは Firebase Authentication で認証し、参加しているルームを一覧表示したり、新しいルームを作成・削除できます。
-
-以下の動画を参考にルーム機能を追加しました。\
 [参考動画](https://www.youtube.com/watch?v=Js9BsBsczE8)
-
 
 
 ## 機能
@@ -43,7 +33,16 @@ https://www.youtube.com/watch?v=Js9BsBsczE8
     "name": "ルームA",
     "owner": "userId1",
     "members": ["userId1", "userId2", "userId3"],
-    "createdAt": "timestamp"
+    "createdAt": "timestamp",
+    "messages": [
+    {
+      "id": "messageId1",
+      "roomId": "roomId1",
+      "senderId": "userId1",
+      "text": "こんにちは！",
+      "createdAt": "timestamp"
+    }
+]
   }
 ],
 "users": [
