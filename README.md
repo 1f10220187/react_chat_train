@@ -17,36 +17,6 @@ Reactに触れてみたいと思い作ってみました。<br>
 - ルームの削除
 - ルーム内のメンバー表示（最大3人まで）
 
-## Firebase 設定
-
-### Firestore データ構造はこんな感じです
-
-```json
-"rooms": [
-  {
-    "name": string,
-    "owner": string,
-    "members": list,
-    "createdAt": "timestamp",
-    "messages": [
-    {
-      "uid": string,
-      "text": string,
-      "photoURL": string,
-      "createdAt": "timestamp"
-    }
-]
-  }
-],
-"users": [
-  {
-    "id": string,
-    "displayName": string,
-    "email": string,
-  }
-]
-```
-
 ### 3. `.env` ファイルの設定
 
 Firebase の設定情報を `.env` に追加してください。
