@@ -2,7 +2,7 @@
 
 ## 概要
 このプロジェクトは、Firebase を使って簡単なチャットルーム機能を実装した React アプリです。
-Reactに触れてみたくて作りました。
+Reactに触れてみたくて作りました。<br>
 ユーザーは Firebase Authentication で認証し、参加しているルームを一覧表示したり、新しいルームを作成・削除できます。
 以下の動画を参考にルーム機能をつけてみたものです。(UIなども異なります。)
 [参考動画](https://www.youtube.com/watch?v=Js9BsBsczE8)
@@ -18,13 +18,7 @@ Reactに触れてみたくて作りました。
 
 ## Firebase 設定
 
-### 1. Firebase プロジェクトの作成
-
-1. [Firebase Console](https://console.firebase.google.com/) にアクセスし、新しいプロジェクトを作成。
-2. Authentication で Google ログインを有効化。
-3. Firestore Database をセットアップし、以下のようなデータ構造を作成。
-
-### 2. Firestore データ構造
+### Firestore データ構造はこんな感じです
 
 ```json
 "rooms": [
