@@ -72,7 +72,7 @@ REACT_APP_FIREBASE_APP_ID=your_app_id
     }
   ]
 }
-
+```
 
 
 
