@@ -30,23 +30,48 @@ REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
 REACT_APP_FIREBASE_APP_ID=your_app_id
 ```
-## FIrebaseのデータ構造
-"rooms": [
-  {
-    "id": "roomId1",
-    "name": "ルームA",
-    "owner": "userId1",
-    "members": ["userId1", "userId2", "userId3"],
-    "createdAt": "timestamp"
-  }
-],
-"users": [
-  {
-    "id": "userId1",
-    "displayName": "ユーザーA",
-    "email": "userA@example.com"
-  }
-]
+## Firebase のデータ構造
+
+このアプリでは Firestore を使用し、以下のようなデータ構造になっています。
+
+```json
+{
+  "rooms": [
+    {
+      "id": "roomId1",
+      "name": "ルームA",
+      "owner": "userId1",
+      "members": ["userId1", "userId2", "userId3"],
+      "createdAt": "timestamp",
+      "messages": [
+        {
+          "uid": "userId1",
+          "text": "こんにちは！",
+          "photoURL": "https://example.com/userA.jpg",
+          "createdAt": "timestamp"
+        },
+        {
+          "uid": "userId2",
+          "text": "こんにちは、元気？",
+          "photoURL": "https://example.com/userB.jpg",
+          "createdAt": "timestamp"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "userId1",
+      "displayName": "ユーザーA",
+      "email": "userA@example.com"
+    },
+    {
+      "id": "userId2",
+      "displayName": "ユーザーB",
+      "email": "userB@example.com"
+    }
+  ]
+}
 
 
 
