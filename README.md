@@ -17,9 +17,10 @@ Reactに触れてみたいと思い作ってみました。<br>
 - ルームの削除
 - ルーム内のメンバー表示（最大3人まで）
 
-### 3. `.env` ファイルの設定
+## `.env` ファイルの設定
 
 Firebase の設定情報を `.env` に追加してください。
+Firebaseの使い方は上記の動画を参照してください。
 
 ```env
 REACT_APP_FIREBASE_API_KEY=your_api_key
@@ -29,6 +30,24 @@ REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
 REACT_APP_FIREBASE_APP_ID=your_app_id
 ```
+## FIrebaseのデータ構造
+"rooms": [
+  {
+    "id": "roomId1",
+    "name": "ルームA",
+    "owner": "userId1",
+    "members": ["userId1", "userId2", "userId3"],
+    "createdAt": "timestamp"
+  }
+],
+"users": [
+  {
+    "id": "userId1",
+    "displayName": "ユーザーA",
+    "email": "userA@example.com"
+  }
+]
+
 
 
 
