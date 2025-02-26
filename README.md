@@ -1,7 +1,7 @@
 # Firebase Chat App
 
 ## 概要
-このプロジェクトは、以下の動画を参考にさせていただきました。<br>
+このは、以下の動画を参考にさせていただきました。<br>
 Firebase を使って簡単なチャットルーム機能を実装した React アプリです。
 Reactに触れてみたいと思い作ってみました。<br>
 [参考動画](https://www.youtube.com/watch?v=Js9BsBsczE8)
@@ -33,7 +33,7 @@ REACT_APP_FIREBASE_APP_ID=your_app_id
 ## Firestore のデータ構造
 
 このアプリでは Firestore を使用し、以下のようなデータ構造になっています。<br>
-(コードを動かせばFireStoreは自動で作られるため設定は必要ないと思います。)
+(コードを動かせばデータは自動で作られるため、特別な設定は必要ないと思います。)
 
 ```json
 {
