@@ -1,7 +1,7 @@
 # Firebase Chat App
 
 ## 概要
-このは、以下の動画を参考にさせていただきました。<br>
+このコードは、以下の動画を参考にさせていただきました。<br>
 Firebase を使って簡単なチャットルーム機能を実装した React アプリです。
 Reactに触れてみたいと思い作ってみました。<br>
 [参考動画](https://www.youtube.com/watch?v=Js9BsBsczE8)
