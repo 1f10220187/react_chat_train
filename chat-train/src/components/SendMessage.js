@@ -3,13 +3,18 @@ import {db , auth} from "../firebase.js"
 import firebase from "firebase/compat/app"
 import { Input } from '@mui/material';
 import SendIcon from "@mui/icons-material/Send"
+import { useParams } from "react-router-dom";
 
 function SendMessage() {
   const [message, setMessage] = useState("");
+  const { roomId } = useParams();
+
   function sendMessage(e){
     e.preventDefault();
     const { uid, photoURL } = auth.currentUser;
-    db.collection("messages").add({
+    db.collection("rooms")
+    .doc(roomId)
+    .collection("messages").add({
       text: message,
       photoURL,
       uid,

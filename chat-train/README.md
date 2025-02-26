@@ -1,8 +1,80 @@
 # Getting Started with Create React App
 
+## 概要
+このプロジェクトは、Firebase を使って簡単なチャットルーム機能を実装した React アプリです。
+Reactに触れてみたくて作りました。
+ユーザーは Firebase Authentication で認証し、参加しているルームを一覧表示したり、新しいルームを作成・削除できます。
+以下の動画を参考にルーム機能をつけてみたものです。
+https://www.youtube.com/watch?v=Js9BsBsczE8
+
+# Firebase Chat App
+
+## 概要
+
+このプロジェクトは、Firebase を使って簡単なチャットルーム機能を実装した React アプリです。ユーザーは Firebase Authentication で認証し、参加しているルームを一覧表示したり、新しいルームを作成・削除できます。
+
+以下の動画を参考にルーム機能を追加しました。\
+[参考動画](https://www.youtube.com/watch?v=Js9BsBsczE8)
+
+
+
+## 機能
+
+- ユーザー認証（Googleログイン）
+- ルームの一覧表示（参加しているルームのみ）
+- 新しいルームの作成
+- ルームの削除
+- ルーム内のメンバー表示（最大3人まで）
+
+## Firebase 設定
+
+### 1. Firebase プロジェクトの作成
+
+1. [Firebase Console](https://console.firebase.google.com/) にアクセスし、新しいプロジェクトを作成。
+2. Authentication で Google ログインを有効化。
+3. Firestore Database をセットアップし、以下のようなデータ構造を作成。
+
+### 2. Firestore データ構造
+
+```json
+"rooms": [
+  {
+    "id": "roomId1",
+    "name": "ルームA",
+    "owner": "userId1",
+    "members": ["userId1", "userId2", "userId3"],
+    "createdAt": "timestamp"
+  }
+],
+"users": [
+  {
+    "id": "userId1",
+    "displayName": "ユーザーA",
+    "email": "userA@example.com"
+  }
+]
+```
+
+### 3. `.env` ファイルの設定
+
+Firebase の設定情報を `.env` に追加してください。
+
+```env
+REACT_APP_FIREBASE_API_KEY=your_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
+```
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
 
 In the project directory, you can run:
 

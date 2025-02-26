@@ -60,7 +60,7 @@
     padding: 0 20px; /* 左右に余白を持たせる */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 1); /* 下に軽い影をつける */
     border-bottom: 2px solid rgba(255, 255, 255, 0.1); /* 境界線を薄く */
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   
   .userName{
@@ -71,3 +71,75 @@
   body{
     background-color: #d6f5e0;
   }
+
+  .toRooms {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff; /* 明るめの青 */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.toRooms:hover {
+    background-color: #0056b3; /* 濃い青でホバー時に変化 */
+    transform: scale(1); /* 少し大きくなる */
+}
+
+.toRooms:active {
+    transform: scale(0.98); /* クリック時に少し小さく */
+}
+
+.room-container {
+  display: flex;
+  align-items: center; /* 高さを中央揃え */
+  justify-content: space-between; /* 左右に要素を配置 */
+  gap: 10px;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.room {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; /* 縦に並べる */
+  justify-content: center; /* 縦方向の中央揃え */
+}
+
+.room-name {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.room-members {
+  font-size: 16px;
+  color: #57ed00;
+  text-align: left; /* 左揃えのほうが自然 */
+}
+
+.delete-room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 60px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.delete-room:hover {
+  background-color: #cc0000;
+}
